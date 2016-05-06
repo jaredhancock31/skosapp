@@ -2,8 +2,13 @@
 
 {% block content %}
 
-    {{ rdf.title }}
-    {{ rdf.owner }}
-    {{ rdf.rdf_file.path }}
+    <table>
+    {% for uri, stats in results.items %}
+        <tr>
+            <td> {{ stats.prefLabel }}: </td><td>{{ stats }}</td>
+        </tr>
+
+    {% endfor %}
+    </table>
 
 {% endblock %}

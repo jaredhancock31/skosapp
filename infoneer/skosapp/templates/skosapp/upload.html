@@ -10,15 +10,10 @@
             <input type="submit" value="Upload" />
         </form>
         <br>
-        {% for r in rdf %}
-            {{forloop.counter}}.<a href="{{ r.rdf_file.url }}">{{ r.rdf_file.name }}</a>
-            ({{r.upload_date}})<hr />
-        {% endfor %}
+{#        {% for r in rdf %}#}
+{#            {{forloop.counter}}.<a href="{{ r.rdf_file.url }}">{{ r.rdf_file.name }}</a>#}
+{#            ({{r.upload_date}})<hr />#}
+{#        {% endfor %}#}
     </div>
-
-{#    <div>#}
-{#        <br>#}
-{#        <button type="button" >Run</button>#}
-{#    </div>#}
 
 {% endblock %}

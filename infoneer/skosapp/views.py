@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponseNotAllowed
 from django.core.urlresolvers import reverse
 from django.contrib.auth import views, tokens, decorators
 from django.views.generic import DetailView
@@ -17,7 +17,7 @@ def contact(request):
 
 
 def about(request):
-    return render(request, 'skosapp/basic.html', {'data': ['item1', 'item2']})
+    return render(request, 'skosapp/basic.html', {'data': ['todo', 'todo']})
 
 
 def upload(request):
@@ -33,13 +33,13 @@ def upload(request):
         if form.is_valid():
             instance = form.save(commit=False)
             instance.save()
+
+            # save to session for ease of use between views
             request.session['rdf'] = instance.id
             return HttpResponseRedirect(reverse('skos'))
     else:
         form = UploadForm()
-
-    # rdf = Upload.objects.last()    # display the last file uploaded
-    return render(request, 'skosapp/upload.html', {'form': form, 'rdf': None})
+    return render(request, 'skosapp/upload.html', {'form': form})
 
 
 def skos(request):
@@ -47,9 +47,12 @@ def skos(request):
 
     if pk:
         rdf = RdfUpload.objects.get(pk=pk)
-        print rdf.rdf_file.path
         skos_tool = SkosTool(rdf_path=rdf.rdf_file.path)
-        return render(request, 'skosapp/results.html', {'rdf': rdf})
+        skos_tool.parse()
+        skos_tool.sort()
+        results = skos_tool.get_metrics()
+
+        return render(request, 'skosapp/results.html', {'results': results})
     else:
         return render(request, 'index')
 
