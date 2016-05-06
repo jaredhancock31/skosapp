@@ -49,6 +49,7 @@ def skos(request):
         rdf = RdfUpload.objects.get(pk=pk)
         skos_tool = SkosTool(rdf_path=rdf.rdf_file.path)
         skos_tool.parse()
+        skos_tool.get_corpus_data()
         skos_tool.sort()
         results = skos_tool.get_metrics()
 
