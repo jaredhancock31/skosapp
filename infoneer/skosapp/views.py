@@ -6,6 +6,7 @@ from django.contrib.auth import views, tokens, decorators
 from django.views.generic import DetailView
 from .models import RdfUpload, UploadForm
 from common.util.skos_tool import SkosTool
+from common.util import corpus_util
 
 
 def index(request):
@@ -43,13 +44,18 @@ def upload(request):
 
 
 def skos(request):
+    """
+    View that contains
+    :param request:
+    :return:
+    """
     pk = request.session.get('rdf', default=None)
 
     if pk:
         rdf = RdfUpload.objects.get(pk=pk)
         skos_tool = SkosTool(rdf_path=rdf.rdf_file.path)
         skos_tool.parse()
-        skos_tool.get_corpus_data()
+        skos_tool.get_frequencies()
         skos_tool.sort()
         results = skos_tool.get_metrics()
 
@@ -58,3 +64,20 @@ def skos(request):
         return render(request, 'index')
 
 
+def corpus(request):
+    """
+    view for kicking off a PoolParty sync
+    :param request:
+    :return:
+    """
+    return render(request, 'skosapp/corpus.html')
+
+
+def corpus_fetch(request):
+    """
+    executes PoolParty sync and then redirects to the upload view
+    :param request:
+    :return:
+    """
+    corpus_util.get_corpus_data()
+    return HttpResponseRedirect(reverse('upload'))

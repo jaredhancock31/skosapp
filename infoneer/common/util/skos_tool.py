@@ -47,9 +47,6 @@ class SkosTool(object):
         for uri in self.concepts:
             concept = self.concepts[uri]
 
-            # TODO remove this buuuuullshit
-            print uri,  type(uri)
-
             # set prefLabel in metrics dict
             if self.metrics[uri][PREF_LABEL] is '':
                 self.metrics[uri][PREF_LABEL] = concept.prefLabel
@@ -63,6 +60,7 @@ class SkosTool(object):
             if concept.synonyms:
                 self.metrics[concept.uri][IMPORTANCE_SCORE] += EXTERNAL_LINK_FACTOR
                 self.metrics[concept.uri][NUM_EXTERNAL] = len(concept.synonyms)
+
 
     def __normalize_on_max(self, max_score=None):
         """
@@ -115,57 +113,20 @@ class SkosTool(object):
         return self.__sorted
 
 
-    def __parse_corpus_response(self, response):
+    def get_frequencies(self, filename='corpus_data/frequencies.json'):
         """
-        parse json response into dict with concept uri as key, and term-frequency as value
-        :param response: api response
-        :return: dict of concepts and their frequencies
-        """
-        concepts = {}
-        for con in response:
-            name = con['conceptUri']['uri'].encode('utf-8')
-            freq = con['frequency']
-            concepts[name] = freq
-            # concepts[name.lower()] = freq
-        return concepts
-
-
-    def __query_corpus(self, idx=0):
-        """
-        Query PP API for extracted concepts and their term frequencies. Only 20 concepts per request allowed.
-        :param idx: index from which to retrieve extracted concepts from api
-        :return: json representation of concept and its corpus data
-        """
-        url = CORPUS_URL + str(idx)
-
-        result = requests.get(url, auth=AUTH)
-
-        if result.text == '[]' or result.text == '[ ]':
-            return None
-        else:
-            return json.loads(result.text)
-
-
-
-    def get_corpus_data(self):
-        """
-        Using the PP API, query the corpus with the current thesaurus to extract term frequency
+        Get the term frequency value for each concept in the metrics dict from the locally-stored corpus data
+        :param filename: path to term frequency data (JSON)
         :return:
         """
-        print 'inside get_corpus_data'
-        idx = 0
-        response = self.__query_corpus(idx)
-        extracted_concepts = {}
-        while response is not None:
-            extracted_concepts = self.__parse_corpus_response(response)
-            for concept in extracted_concepts:
-                freq = extracted_concepts.get(concept)
-                if concept in self.metrics:
-                    # print 'heres a match between the two dicts' + concept
-                    self.metrics[concept][FREQUENCY] = freq
-                    self.metrics[concept][IMPORTANCE_SCORE] = (FREQ_SCORE_FACTOR * freq)
-            idx += 20
-            response = self.__query_corpus(idx)
+        # TODO handle both JSON and txt file possibilities
+
+        with open(filename) as json_file:
+            json_data = json.load(json_file)
+            for uri in json_data:
+                if uri in self.metrics:
+                    self.metrics[uri][FREQUENCY] = json_data[uri]
+
 
 
 

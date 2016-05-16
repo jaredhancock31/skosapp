@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#">
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/364">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Super Alloy</skos:prefLabel>
+	<dcterms:creator>urbanovskyc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</dcterms:hasVersion>
+	<skos:narrower rdf:resource="http://infoneer.poolparty.biz/Casting/415"/>
+	<skos:narrower rdf:resource="http://infoneer.poolparty.biz/Casting/416"/>
+	<skos:narrower rdf:resource="http://infoneer.poolparty.biz/Casting/417"/>
+	<skos:narrower rdf:resource="http://infoneer.poolparty.biz/Processes/416"/>
+	<skos:narrower rdf:resource="http://infoneer.poolparty.biz/Processes/417"/>
+	<skos:narrower rdf:resource="http://infoneer.poolparty.biz/Processes/592"/>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/361"/>
+	<skos:narrowerTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/415"/>
+	<skos:narrowerTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/416"/>
+	<skos:narrowerTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/417"/>
+	<skos:narrowerTransitive rdf:resource="http://infoneer.poolparty.biz/Processes/416"/>
+	<skos:narrowerTransitive rdf:resource="http://infoneer.poolparty.biz/Processes/417"/>
+	<skos:narrowerTransitive rdf:resource="http://infoneer.poolparty.biz/Processes/592"/>
+	<skos:definition xml:lang="en">An alloy consisting of three or more elements that is very expensive and designed to perform at elevated temperatures.</skos:definition>
+	<skos:definition xml:lang="en">A superalloy, or high-performance alloy, is an alloy that exhibits excellent mechanical strength and resistance to creep (tendency for solids to slowly move or deform under stress) at high temperatures; good surface stability; and corrosion and oxidation resistance. Superalloys typically have a matrix with an austenitic face-centered cubic crystal structure. A superalloy's base alloying element is usually nickel, cobalt, or nickel-iron. Superalloy development has relied heavily on both chemical and process innovations and has been driven primarily by the aerospace and power industries. Typical applications are in the aerospace, industrial gas turbine and marine turbine industry, e.g. for turbine blades for hot sections of jet engines, and bi-metallic engine valves for use in diesel and automotive applications.</skos:definition>
+	<skos:altLabel xml:lang="en">Superalloy</skos:altLabel>
+	<skos:altLabel xml:lang="en">high-performance alloy</skos:altLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-17T20:53:12Z</dcterms:created>
+	<skos:altLabel xml:lang="en">special alloy</skos:altLabel>
+	<skos:exactMatch rdf:resource="http://de.dbpedia.org/resource/Kategorie:Holden_Special_Vehicles"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-11-20T21:24:40Z</dcterms:modified>
+	<dcterms:contributor>fameri</dcterms:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/159">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Actinium</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/160">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 1100</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/161">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 2011</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-23T22:02:46Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/357"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/162">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 2014</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-23T22:03:00Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/357"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/163">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 2017</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/164">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 2024</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-23T22:03:49Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/357"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/165">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 3003</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-23T22:04:09Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/357"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/166">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 5005</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-23T22:04:33Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/357"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/167">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 5052</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-23T22:06:53Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/357"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/168">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 5056</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/169">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 5083</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-23T22:07:02Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/357"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/170">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 5086</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-23T22:07:13Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/357"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/402"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/171">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 6061</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/172">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 6063</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/173">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 7050</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/174">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 7075</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/175">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 7079</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/176">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aluminium 7178</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/177">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Antimony</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-18T20:43:30Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/178">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Babbitt</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</dcterms:hasVersion>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-05-18T20:58:24Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:altLabel xml:lang="en">Babbitt metal</skos:altLabel>
+	<skos:altLabel xml:lang="en">bearing metal</skos:altLabel>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:contributor>urbanovskyc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://infoneer.poolparty.biz/Casting/179">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Barium</skos:prefLabel>
+	<dcterms:creator>mcarthurc</dcterms:creator>
+	<dcterms:hasVersion rdf:resource="http://semantic-web.at/poolparty-caipirinha/versions/1"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:modified>
+	<skos:broader rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<skos:broaderTransitive rdf:resource="http://infoneer.poolparty.biz/Casting/363"/>
+	<dcterms:contributor>mcarthurc</dcterms:contributor>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-03-27T21:05:04Z</dcterms:created>
+</rdf:Description>
+
+</rdf:RDF>
